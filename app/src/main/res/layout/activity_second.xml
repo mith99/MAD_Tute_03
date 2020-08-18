@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BCE8FB">
+
+        <TextView
+            android:id="@+id/num_one_txtv_a2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="150dp"
+            android:text="@string/number_1"></TextView>
+
+        <TextView
+            android:id="@+id/num_two_txtv_a2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="200dp"
+            android:text="@string/number_2">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/num_one_a2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="130dp"
+            android:inputType="number"></EditText>
+
+        <EditText
+            android:id="@+id/num_two_a2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="180dp"
+            android:inputType="number"></EditText>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="350dp"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="350dp"
+            android:text="@string/substract" />
+
+        <Button
+            android:id="@+id/mult"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="425dp"
+            android:text="@string/multiply" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="425dp"
+            android:text="@string/divide" />
+
+        <TextView
+            android:id="@+id/finalvalue"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/num_two_a2"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result" />
+
+      </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
